@@ -10,7 +10,7 @@ COPY ./requirements.txt requirements.txt
 RUN pip install --user -r requirements.txt
 
 FROM python:3.7.15-slim
-
+EXPOSE 10000
 ENV PYTHONUNBUFFERED 1
 
 WORKDIR /app
